@@ -12,3 +12,6 @@
 ## Official Homepage
 
 See https://www.flagsoft.com/cmswp/en/software/phpfusion-official-homepage/
+
+
+### Git Tags
