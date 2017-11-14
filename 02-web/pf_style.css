@@ -1,0 +1,156 @@
+/* 
+    Document   : pf_style
+    Created on : Jan 21, 2012, 3:42:10 PM
+    Author     : michi
+    Description:
+        Purpose of the stylesheet follows.
+*/
+
+
+/*
+ * <div id="mainbody">
+ */
+
+#mainbody {
+
+    margin-left: auto;
+    margin-right: auto;
+
+    margin: 0;
+    
+    width: auto; /*1440px;*/    
+    
+    /*background-color: #ccc;*/
+}
+
+
+#mainpaper {
+    width: 1440px;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+
+
+div.user_header {
+    
+    font-family: sans-serif;
+    font-size: 22pt;
+
+    width: 2040px;
+    
+    padding-right: 0px;
+    
+    padding-top: 0px;
+    padding-left: 0px;
+    color: black;
+    /*background-color: #eee;*/
+    
+    float: left;
+}
+
+
+.logo {
+    padding-top: 0px;
+    padding-left: 200px;
+
+    float: left;
+}
+
+
+.titletext {
+    padding-top: 0px;
+    padding-left: 200px;
+    
+    float: left;
+}
+
+.clear {
+    clear:left;
+}
+
+
+div.user_menu {
+    background-color: #ddd;
+}
+
+
+
+
+div.user_selection {
+    width: 600px;
+}
+
+
+
+/*
+ *  USER footer
+ */
+
+div.user_footer {
+    
+    font-family: sans-serif;
+    font-size: 12pt;
+    
+    padding-top: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    /*color: snow;*/
+    background-color:#eeeeee;
+    height: 400px;
+
+}
+
+div.user_footer a:link {
+    color: #aaa;
+    text-decoration: unterline;
+}
+div.user_footer a:visited {
+    color: #999;
+    text-decoration: unterline;
+} 
+div.user_footer a:hover { 
+    color: #eee;
+    text-decoration: underline;
+}
+
+
+
+
+
+body {
+    /*margin: 0;*/
+    margin-top: 0px;
+    margin-left: 0px;
+    /*margin-right: 0px;*/    
+}
+
+root { 
+    display: block;
+}
+
+table {
+    border-style: solid;
+    border-left-style: none;
+    border-right-style: none;
+    border-color: red;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+    background-color: whitesmoke;
+    
+    
+}
+
+th { background-color: #ccc; }
+tr:nth-child(odd)    { background-color:#ddd; }
+tr:nth-child(even)    { background-color:#eee; }
+
+
+
+/*form {
+    border: 2px solid #666699;  
+    padding: 5px;
+}*/
+
+/* EOF. */

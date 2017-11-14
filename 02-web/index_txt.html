@@ -1,0 +1,80 @@
+        
+    <h2>Catalogue</h2>
+
+    
+    <div class="user_selection">
+    
+    <form name="form_one" onSubmit="return pf_util_check()" action="index.php?search" method="post">
+        
+        <fieldset>
+        <legend>Size</legend>
+        <input type="radio" name="size[]" value="0:0" checked /> (all sizes)<br/>
+        <input type="radio" name="size[]" value="2:2" /> 2 person<br/>
+        <input type="radio" name="size[]" value="4:4" /> 4 person<br/>
+        <input type="radio" name="size[]" value="8:8" /> 8 person<br/>
+        </fieldset>
+
+        
+        <fieldset>
+        <legend><a href ="#" onclick="PF_show_div('menue1')">Consumption (show/hide)</a> [Liter per 100 km]</legend>
+        <div id="menue1" style="display: none;" >
+        <select name="consumption[]">
+            <option value="0:0">(all)</option>
+            <option value="0.0:6.1"> til 6.1 L</option>
+            <option value="6.2:7.5"> 6.2 - 7.5 L</option>
+            <option value="7.6:10.5"> 6.2 - 10.5 L</option>
+            <option value="11.5:12.5"> 11.5 - 12.5 L</option>
+            <option value="12.6:99"> 12.5 L and more</option>
+        </select>
+        </div>
+        </fieldset>
+        
+
+
+        <fieldset>
+            <legend><a href ="#" onclick="PF_show_div('menue_ps')">PS (show/hide)</a></legend>
+            <div id="menue_ps" style="display: none;">
+                <input type="radio" name="ps[]" value="0:0" checked /> all<br/>
+                <input type="radio" name="ps[]" value="0:100" /> 100 and below<br/>
+                <input type="radio" name="ps[]" value="120:190" /> 120 - 190<br/>
+                <input type="radio" name="ps[]" value="200:400" /> 200 - 400<br/>
+                <input type="radio" name="ps[]" value="1000:9999" /> 1000 and more<br/>
+            </div>
+        </fieldset>
+
+
+        
+        <fieldset>
+        <legend><a href ="#" onclick="PF_show_div('menue_green')">Green Label (show/hide)</a></legend>
+
+                <div id="menue_green" style="display: none;" >
+        <!--<input type="button" name="Button" value="Click Me" onClick="pf_util_check()" /> -->               
+        <input type="checkbox" name="greenlabel[]" value="0" checked> All<br/>
+        <input type="checkbox" name="greenlabel[]" value="A"> A - best<br/>
+        <input type="checkbox" name="greenlabel[]" value="B"> B - very good<br/>
+        <input type="checkbox" name="greenlabel[]" value="C"> C - good<br/>
+        <input type="checkbox" name="greenlabel[]" value="D"> D - bad<br/>
+        <input type="checkbox" name="greenlabel[]" value="E"> E - worst<br/>
+        
+        <input type=button name="CheckAll"   value="all" onClick="check_all_in_document(window.document)">
+        <input type=button name="UnCheckAll" value="none" onClick="uncheck_all_in_document(window.document)">
+        </div>
+
+        </fieldset>
+            
+        <input type="hidden" name="action" value="search"/>
+        <input type="submit" name="submit" value="Search!"/>
+        &nbsp; &nbsp; &nbsp;
+        <input type="reset" name="" value="Reset to default values"/>
+        
+    </form>
+
+    </div>
+
+        
+    <!--
+        <div id="result">
+            no data so far...
+        </div>
+    -->
+
